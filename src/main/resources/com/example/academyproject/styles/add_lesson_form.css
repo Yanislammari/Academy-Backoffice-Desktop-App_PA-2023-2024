@@ -1,0 +1,90 @@
+.form-container {
+    -fx-padding: 20px;
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 10px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-alignment: center;
+}
+
+.form-title {
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.input-hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+.text-field {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-background-color: #fff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-min-width: 200px;
+}
+
+.combo-box {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-background-color: #fff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-min-width: 200px;
+}
+
+.choose-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+.submit-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-pref-width: 100px;
+    -fx-min-width: 100px;
+}
+
+.submit-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.submit-button:pressed {
+    -fx-background-color: #004085;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #007bff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-text-fill: #0056b3;
+}
+
+.header-box {
+    padding: 10px;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academyproject.controllers.TeacherDetailsViewController" stylesheets="@../styles/user_details.css">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header-box" BorderPane.alignment="CENTER">
+            <children>
+                <Button text="⬅ Back" onAction="#handleBack" styleClass="back-button"/>
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox alignment="CENTER" spacing="20" prefWidth="300.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="profileImageView" fitWidth="150.0" fitHeight="150.0" />
+                <VBox spacing="10">
+                    <children>
+                        <Label text="ID :" />
+                        <Label fx:id="idLabel" />
+                        <Label text="First Name :" />
+                        <Label fx:id="firstNameLabel" />
+                        <Label text="Last Name :" />
+                        <Label fx:id="lastNameLabel" />
+                        <Label text="Email :" />
+                        <Label fx:id="emailLabel" />
+                        <Label text="Role :" />
+                        <Label fx:id="roleLabel" />
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets top="20" />
+            </VBox.margin>
+        </VBox>
+    </left>
+    <center>
+        <TableView fx:id="coursesTableView">
+            <columns>
+                <TableColumn fx:id="courseNameColumn" text="Title" prefWidth="200.0" />
+                <TableColumn fx:id="courseDescriptionColumn" text="Description" prefWidth="400.0" />
+                <TableColumn fx:id="courseLevelColumn" text="Level" prefWidth="100.0" />
+                <TableColumn fx:id="enrollmentNumber" text="Enrollments" prefWidth="100.0" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

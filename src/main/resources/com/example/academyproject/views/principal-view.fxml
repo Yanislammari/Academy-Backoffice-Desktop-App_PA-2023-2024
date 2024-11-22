@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academyproject.SceneController">
+    <left>
+        <VBox prefHeight="343.0" prefWidth="216.0" style="-fx-background-color: #6495ED;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="155.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../assets/logo_academy_crop.png" />
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Button fx:id="userConnectedButton" mnemonicParsing="false" onAction="#loadProfileView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_user.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadHomeView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Home" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadUserView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Users" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_users.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadCourseView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Courses" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_courses.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadLessonView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Lessons" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_lessons.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadExerciseView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Exercises" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_exercises.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadEnrollmentView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Enrollments" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_enrollments.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadCommentsView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Comments" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_comments.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadCommentsView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Reports" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_reports.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadStatisticsView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Statistics" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_statistics.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#loadFeedbackView" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Feedback" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_feedback.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#logout" onMouseEntered="#buttonHooverHandler" onMouseExited="#buttonExitHandler" prefHeight="37.0" prefWidth="250.0" style="-fx-background-color: #6495ED;" text="Log out" textFill="WHITE">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/logo_logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+    <top>
+        <HBox prefHeight="57.0" prefWidth="600.0" style="-fx-background-color: #5077BC;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Academy Back Office" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                    <padding>
+                        <Insets left="25.0" top="15.0" />
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <Pane fx:id="mainContent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

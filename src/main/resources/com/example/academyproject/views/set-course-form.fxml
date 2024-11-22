@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academyproject.controllers.SetCourseFormViewController" stylesheets="@../styles/set_course_form.css">
+    <center>
+        <VBox prefHeight="250.0" prefWidth="100.0" BorderPane.alignment="CENTER" styleClass="form-container">
+            <children>
+                <Label text="Edit a Course" textAlignment="CENTER" styleClass="form-title">
+                    <font>
+                        <Font name="Al Bayan Bold" size="28.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="45.0" prefWidth="330.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Title: " styleClass="input-label"/>
+                        <TextField fx:id="title" styleClass="text-field"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="330.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Description: " styleClass="input-label"/>
+                        <TextField fx:id="description" styleClass="text-field"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="330.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Level: " styleClass="input-label"/>
+                        <ComboBox fx:id="level" styleClass="combo-box">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="BEGINNER"/>
+                                    <String fx:value="INTERMEDIATE"/>
+                                    <String fx:value="ADVANCED"/>
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="330.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Image: " styleClass="input-label"/>
+                        <Button text="Choose" fx:id="chooseImageButton" onAction="#handleChoosePhoto" styleClass="choose-button"/>
+                        <ImageView fx:id="courseImageView" fitHeight="40.0" fitWidth="40.0" styleClass="image-view"/>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" onAction="#handleEdit" text="Edit" styleClass="submit-button"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

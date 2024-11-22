@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.academyproject.controllers.StatisticsViewController">
+    <VBox alignment="CENTER" spacing="20.0" layoutX="0.0" layoutY="0.0" prefWidth="1000" prefHeight="600">
+        <Label text="Back Office" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+        <LineChart fx:id="enrollmentsLineChart" prefHeight="400.0" prefWidth="600.0">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" label="Date" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Course Enrollments" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+</AnchorPane>

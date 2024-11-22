@@ -1,0 +1,72 @@
+.left-pane {
+    -fx-background-color: #6495ED;
+}
+
+.top-bar {
+    -fx-background-color: #5077BC;
+}
+
+.title-label {
+    -fx-text-fill: WHITE;
+}
+
+.login-title {
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+
+.center-container {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.form-container {
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-alignment: center;
+}
+
+.input-hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+.text-field {
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-background-color: #fff;
+    -fx-font-size: 14px;
+    -fx-pref-width: 277px;
+}
+
+.login-button {
+    -fx-background-color: #0275d8;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+}
+
+.login-button:hover {
+    -fx-background-color: #025aa5;
+}
+
+.login-button:pressed {
+    -fx-background-color: #023e8a;
+}
+
+.error-message {
+    -fx-text-fill: #d9534f;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}

@@ -1,0 +1,96 @@
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-color: #f4f4f9;
+    -fx-padding: 20px;
+}
+
+#usersTableView {
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 10);
+    -fx-padding: 10px;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #6495ED;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 28px;
+    -fx-border-color: transparent;
+    -fx-background-color: #6495ED;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #a2baec;
+    -fx-text-fill: black;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #92b1e1;
+    -fx-text-fill: black;
+}
+
+.button {
+    -fx-background-color: #6495ED;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 5, 0, 0, 5);
+}
+
+.button:hover {
+    -fx-background-color: #5F8CDC;
+}
+
+.button:pressed {
+    -fx-background-color: #5077BC;
+}
+
+#addButton, #editButton, #deleteButton, #rightsButton, #detailsButton {
+    -fx-padding: 8px 16px;
+    -fx-min-width: 150px;
+}
+
+#searchTextField {
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-background-color: white;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 5px;
+    -fx-max-width: 1000px;
+}
+
+.back-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #007bff;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}

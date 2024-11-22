@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academyproject.controllers.SetLessonFormViewController" stylesheets="@../styles/add_lesson_form.css">
+    <top>
+        <HBox alignment="TOP_LEFT" spacing="10" styleClass="header-box">
+            <children>
+                <Button text="← Back" onAction="#handleCancelButton" styleClass="back-button"/>
+            </children>
+            <HBox.margin>
+                <Insets left="10.0" top="10.0" />
+            </HBox.margin>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="350.0" prefWidth="350.0" BorderPane.alignment="CENTER" styleClass="form-container">
+            <children>
+                <Label text="Edit Lesson" textAlignment="CENTER" styleClass="form-title">
+                    <font>
+                        <Font name="Al Bayan Bold" size="28.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="45.0" prefWidth="350.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Title: " styleClass="input-label"/>
+                        <TextField fx:id="titleTextField" styleClass="text-field"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="350.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Description: " styleClass="input-label"/>
+                        <TextArea fx:id="descriptionTextArea" styleClass="text-area"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="45.0" prefWidth="350.0" styleClass="input-hbox">
+                    <children>
+                        <Label text="Video File: " styleClass="input-label"/>
+                        <Button text="Choose" fx:id="selectVideoButton" onAction="#handleSelectVideoFile" styleClass="choose-button"/>
+                        <Label fx:id="videoFilePathLabel" text="No file selected" styleClass="file-path-label"/>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" text="Edit" fx:id="updateLessonButton" onAction="#handleSaveButton" styleClass="submit-button"/>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

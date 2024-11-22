@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.academyproject.controllers.ExercisesViewController" stylesheets="@../styles/exercises_view.css">
+    <top>
+        <VBox spacing="10" alignment="TOP_CENTER">
+            <children>
+                <HBox spacing="10" alignment="CENTER">
+                    <children>
+                        <TextField fx:id="searchTextField" promptText="Search by question" id="searchTextField" maxWidth="800.0">
+                            <HBox.margin>
+                                <Insets top="10.0" left="30.0" right="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="courseFilterComboBox" promptText="Select a course" id="courseFilterComboBox" prefWidth="200.0">
+                            <HBox.margin>
+                                <Insets top="10.0" right="30.0" />
+                            </HBox.margin>
+                        </ComboBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <children>
+                <TableView fx:id="exercisesTableView" prefHeight="417.0" prefWidth="1000.0" id="exercisesTableView">
+                    <columns>
+                        <TableColumn fx:id="exerciseIdColumn" prefWidth="100.0" text="ID" />
+                        <TableColumn fx:id="exerciseQuestionColumn" prefWidth="400.0" text="Question" />
+                        <TableColumn fx:id="exerciseCourseName" prefWidth="100.0" text="Course" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                    </VBox.margin>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addQcmAction" prefHeight="26.0" prefWidth="150.0" text="Add a QCM" id="deleteButton"/>
+                <Button mnemonicParsing="false" onAction="#addBlankAction" prefHeight="26.0" prefWidth="150.0" text="Add a QAT" id="deleteButton"/>
+                <Button mnemonicParsing="false" onAction="#buttonDeleteActionExercise" prefHeight="26.0" prefWidth="150.0" text="Delete" id="deleteButton"/>
+            </children>
+            <HBox.margin>
+                <Insets top="10.0" bottom="10.0" />
+            </HBox.margin>
+        </HBox>
+    </bottom>
+    <padding>
+        <Insets left="30.0" top="30.0" bottom="30.0" right="30.0"/>
+    </padding>
+</BorderPane>
